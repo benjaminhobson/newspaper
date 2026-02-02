@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import the Labor, Export the Blame - The Margin UBC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background-color: #0a1628;
+            padding: 2rem 0;
+            border-bottom: 3px solid #0a1628;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Article Content */
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .article-title {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .article-byline {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .image-caption {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+        }
+
+        .article-body {
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #1a1a1a;
+        }
+
+        .article-body h2 {
+            font-family: 'Georgia', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0a1628;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Drop Cap */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            font-weight: 400;
+            margin-right: 0.1rem;
+            margin-top: 0.1rem;
+            color: #0a1628;
+        }
+
+        /* Links */
+        .article-body a {
+            color: #000;
+            text-decoration: underline;
+            transition: opacity 0.2s;
+        }
+
+        .article-body a:hover {
+            opacity: 0.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a1628;
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .drop-cap::first-letter {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">THE MARGIN</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="podcasts.html">Podcasts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <article>
+            <div class="article-header">
+                <h1 class="article-title">Import the Labor, Export the Blame: Inequality's Oldest Trick</h1>
+                <p class="article-byline">By Benjamin Hobson</p>
+            </div>
+
+            <p class="article-body drop-cap">Live, in front of over 43 million Americans, during the Vice-Presidential debate, JD Vance stated: "You have got housing that is totally unaffordable because we brought in millions of illegal immigrants to compete with Americans for scarce homes [...] 25 million illegal aliens competing with Americans for scarce homes is one of the most significant drivers of home prices in the country."</p>
+
+            <img src="housing-image.jpg" alt="Row of suburban homes with American flags" class="article-image">
+            <p class="image-caption">Photo by Jean Geo, from Unsplash</p>
+
+            <div class="article-body">
+                <h2>The Smokescreen</h2>
+
+                <p>Vance effectively asserts a causal relationship between the influx of unauthorized immigrants and the upward pressure on housing. Upon first glance, this claim seems relatively plausible: an increase in the number of unauthorized immigrants could lead to an increase in the demand for housing, thus raising prices for US citizens – supply and demand. However, this claim is misleading and is unsubstantiated by the evidence.</p>
+
+                <p>First, the 25 million figure Vance employs is ill-supported by trusted sources of information regarding census data. Using data from the Department of Homeland Security's, Pew Research and <a href="https://www.migrationpolicy.org/data/unauthorized-immigrant-population/state/US" target="_blank">the Migration Policy Institute put the figure of unauthorized immigrants just shy of 14 million</a>. Not only is Vance's claim a gross exaggeration designed to fearmonger, but <a href="https://www.sciencedirect.com/science/article/pii/S1544612325001503#sec4" target="_blank">according to a study</a> published by researchers at Texas A&M, there is no statistically significant relationship between unauthorized immigration and house prices.</p>
+
+                <p>While there exists a real relationship between legal immigration and the rise in the cost of housing, Vance's use of statistics from one context to make his point in another is misleading, at best. Furthermore, Vance overstates its significance: Empirical research shows the effect on housing costs as a result of immigration is modest and varies considerably based on local housing supply constraints, particularly zoning regulations. <a href="https://www.migrationpolicy.org/data/unauthorized-immigrant-population/state/US" target="_blank">The homeownership rate for unauthorized immigrants is approximately 31%, compared to 65% for the general populace, including legal immigrants</a>. This discrepancy makes sense: most unauthorized immigrants lack social security numbers, work authorization or a credit history to apply for a mortgage. Vance's implicit solution of reducing population through deportation contradicts standard economic approaches to housing affordability, which focus on increasing supply rather than decreasing demand. <a href="https://limos.engin.umich.edu/deitabase/2024/05/28/undocumented-construction-workers-us/" target="_blank">Immigrants comprise 20% of the construction workforce, which already faces a 500,000-worker shortage</a>. In states like Texas, half of construction workers are undocumented. Removing these workers would likely worsen housing supply constraints and make addressing the issue even more difficult.</p>
+
+                <p>The housing affordability crisis stems from both supply constraints and demand-side inequality. Restrictive zoning regulations, with roughly 75% of residential land zoned exclusively for single-family homes, artificially limits supply. Simultaneously, housing has become increasingly financialized over the past few decades, treated as an investment asset class rather than a basic human need. This wealth concentration creates severe demand-side pressure: <a href="https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/table/#quarter:143;series:Net%20worth;demographic:networth;population:all;units:shares" target="_blank">when the top 10% of Americans control 67% of the nation's wealth and the bottom 50% hold just 2.5%</a>, wealthy investors and institutional buyers can easily outbid working-class families for homes. Housing prices have decoupled from local wages entirely. A teacher or construction worker simply cannot compete with investors treating homes as portfolio additions.</p>
+
+                <p>The point is, unlike Vance suggests, the reason it's so hard for Americans to become homeowners or afford their mortgages has absolutely nothing to do with illegal immigration at all.</p>
+
+                <p>Vance's claim, which the Trump administration has consistently propagated to their supporters poses a paradox: the US economy has depended on immigrant labor while simultaneously blaming them for many of the economic issues the country faces. It begs the question: why are immigrants being blamed?</p>
+
+                <h2>Import the Labor</h2>
+
+                <p>Wealth inequality is baked into market deregulated systems, historically and presently, capital has always concentrated at the top. Economic structures are abstract and incredibly difficult to blame directly, as pointing a finger at an intricate and wide system of economic inequality is a daunting task. Angry and powerless people look for someone to blame, and the idea that unauthorized immigrants are taking away jobs and are the drivers of housing unaffordability gives structure to that anger. <a href="https://www.nber.org/system/files/working_papers/w17234/w17234.pdf" target="_blank">Social psychologists</a> refer to this as "last place aversion," where individuals already living with constant financial insecurity rally against perceived outsiders as a way to protect what little status they feel they still have. Over the last decade, the Trump administration has been brutally efficient at capturing the frustrated voter who will tick the box for the candidate that best promises a complete overhaul of their current predicament.</p>
+
+                <p>Neoliberal policies praise immigration for providing cheap, flexible labor to key industries. But the same system that depends on immigrant workers also fuels backlash against them when inequality rises. As <a href="https://www.researchgate.net/publication/258192314_Beware_of_notarios_Neoliberal_governance_of_immigrants_as_crime_victims" target="_blank">Longazel and Fleury-Steiner observe</a>, "immigration law and politics under neoliberalism has been characterized by an encouragement of increased immigration to satisfy economic imperatives on one hand and punitive laws, which, on the other hand, criminalize these very populations." Our economic systems create the very conditions that make immigrants convenient scapegoats when economic pressures mount.</p>
+
+                <h2>Export the Blame</h2>
+
+                <p>This scapegoating has deep historical precedents. The same pattern repeated during the Great Depression, when Mexican migrants and Mexican Americans were blamed for taking jobs and draining welfare. Between 1929 and 1940, <a href="https://history.stanford.edu/news/1930s-repatriation-mexicans-ana-minian" target="_blank">an estimated 350,000 to 2 million ethnic Mexicans</a> were deported or pressured to leave, despite approximately 60% of them being American citizens. Unsurprisingly, the deportations did nothing to solve the Depression. Unemployment remained catastrophic because the problem was never about Mexican workers, it was about the collapse of the financial system. But blaming immigrants was easier than confronting the failures of banking and economic policy. Notably, just years later, U.S. officials desperately sought to bring Mexican workers back to replace citizens fighting in World War II.</p>
+
+                <p>Economic anxiety gets redirected toward the most vulnerable rather than toward the systems and power structures that create it. This isn't accidental. Blaming immigrants serves those who benefit from the status quo. It keeps working-class Americans fighting each other instead of questioning why wages haven't kept pace with productivity, why housing has been turned into a wealth-building instrument, or why wealth continues to concentrate at the top. The scapegoating serves a purpose: it directs attention toward immigrants while the architects of inequality remain invisible.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Margin UBC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
