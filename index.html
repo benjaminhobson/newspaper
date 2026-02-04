@@ -114,7 +114,7 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             font-size: 0.9rem;
             color: #666;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .featured-content .excerpt {
@@ -146,6 +146,7 @@
             background-color: #f8f8f8;
             margin: 0 -2rem;
             padding: 3rem 2rem;
+            margin-bottom: 3rem;
         }
 
         .about-content {
@@ -167,6 +168,50 @@
             line-height: 1.8;
             color: #333;
             margin-bottom: 1rem;
+        }
+
+        /* Author Section */
+        .author-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+
+        .author-section h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: #0a1628;
+        }
+
+        .author-card {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .author-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .author-info h3 {
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+
+        .author-info p {
+            font-family: 'Georgia', serif;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #333;
         }
 
         /* Footer */
@@ -198,6 +243,15 @@
                 grid-template-columns: 1fr;
             }
 
+            .author-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .author-image {
+                margin: 0 auto;
+            }
+
             .logo {
                 font-size: 2rem;
             }
@@ -216,7 +270,6 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="articles.html">Articles</a></li>
-                    <li><a href="podcasts.html">Podcasts</a></li>
                 </ul>
             </nav>
         </div>
@@ -232,6 +285,7 @@
                 <div class="featured-content">
                     <h1>Import the Labor, Export the Blame: Inequality's Oldest Trick</h1>
                     <p class="byline">By Benjamin Hobson</p>
+                    <p class="byline">February 2, 2026</p>
                     <p class="excerpt">Live, in front of over 43 million Americans, during the Vice-Presidential debate, JD Vance stated: "You have got housing that is totally unaffordable because we brought in millions of illegal immigrants to compete with Americans for scarce homes..."</p>
                     <a href="article1.html" class="read-more">Read Full Article →</a>
                 </div>
@@ -241,7 +295,18 @@
         <section class="about-section">
             <div class="about-content">
                 <h2>About The Margin</h2>
-                <p>The Margin UBC is a student run publication featuring student journalism and articles intented to inform students and others about economic and political topics.</p>
+                <p>The Margin UBC is a student run publication featuring student journalism and articles intended to inform students and others about economic and political topics.</p>
+            </div>
+        </section>
+
+        <section class="author-section">
+            <h2>About the Author</h2>
+            <div class="author-card">
+                <img src="benjamin-hobson.jpg" alt="Benjamin Hobson" class="author-image">
+                <div class="author-info">
+                    <h3>Benjamin Hobson</h3>
+                    <p>Add your bio here.</p>
+                </div>
             </div>
         </section>
     </main>
