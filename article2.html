@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trillion Dollar Question - The Margin UBC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background-color: #0a1628;
+            padding: 2rem 0;
+            border-bottom: 3px solid #0a1628;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Article Content */
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .article-title {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .article-byline {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+
+        .article-date {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .image-caption {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+        }
+
+        .article-body {
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #1a1a1a;
+        }
+
+        .article-body h2 {
+            font-family: 'Georgia', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0a1628;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Drop Cap */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            font-weight: 400;
+            margin-right: 0.1rem;
+            margin-top: 0.1rem;
+            color: #0a1628;
+        }
+
+        /* Links */
+        .article-body a {
+            color: #000;
+            text-decoration: underline;
+            transition: opacity 0.2s;
+        }
+
+        .article-body a:hover {
+            opacity: 0.6;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85rem;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a1628;
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .drop-cap::first-letter {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">THE MARGIN</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <article>
+            <div class="article-header">
+                <h1 class="article-title">The Trillion Dollar Question: What Secondary Markets Are Saying About the 2026 IPO Wave</h1>
+                <p class="article-byline">By Benjamin Hobson</p>
+                <p class="article-date">February 24, 2026</p>
+            </div>
+
+            <img src="spacex.jpg" alt="SpaceX rocket launch" class="article-image">
+            <p class="image-caption">Photo by SpaceX, from Unsplash</p>
+
+            <div class="article-body">
+
+                <p class="drop-cap">OpenAI's shares traded on secondary markets at a $500 billion valuation in October. Recently, the company has been closing a fundraising round at over $850 billion, backed by Amazon, SoftBank, Nvidia, and Microsoft. Its rumored IPO target is $1 trillion. The company doesn't expect to turn a profit until around 2030 and is projecting losses of $14 billion in 2026 alone.</p>
+
+                <p>How a company gets from $500 billion to $1 trillion in under a year, without turning a profit, is worth understanding. To do that, you have to understand what secondary markets are already saying.</p>
+
+                <h2>The Market You Can't See</h2>
+
+                <p>When you look up a public stock, everything is right there: price, volume, trading history. The private market doesn't work that way. There's no ticker, no daily price, no standard disclosure. The only valuation most people ever see is the implied one from a company's last funding round, which could be years out of date.</p>
+
+                <p>Secondary markets exist to fill that gap. Secondary platforms allow early shareholders, typically employees or early investors, to sell their stakes to accredited buyers before a company goes public. The prices those trades happen at are the closest thing private markets have to a real-time signal, and they're giving retail investors access to price discovery that was once reserved for institutional players.</p>
+
+                <p>Sean, an Investment Advisor &amp; Associate Portfolio Manager at Canaccord Genuity, described the opportunity firsthand. "In the private market, it's very opaque," he told me. "As a retail investor, you typically don't know if there's ever been any transactions in a company. You don't know what the price discovery would even look like." Secondary platforms are changing that, creating a more level playing field for investors who previously had no way in.</p>
+
+                <h2>The Gap, and Why It Exists</h2>
+
+                <p>Discord filed confidentially for a US IPO in January 2026, with Goldman Sachs and JPMorgan as lead underwriters. It raised $500 million at a $15 billion valuation in 2021, turned down a $12 billion acquisition offer from Microsoft that same year, and has been private ever since. Secondary markets today are pricing it at roughly $6.6 to $8 billion, less than half that 2021 peak. Some analysts have floated bull-case IPO targets as high as $25 billion. No official valuation has been confirmed. That's a potential spread of close to $18 billion between what informed private market participants are paying today and what the most optimistic public market scenario would ask.</p>
+
+                <p>Part of the explanation is structural. In an IPO, underwriters and the issuing company determine a price range through bookbuilding, weighing investor demand, comparable valuations, and market conditions. Because fees are tied to capital raised and issuers want a strong headline outcome, there is an inherent tension between maximizing price and ensuring aftermarket stability. Public investors often see only the final offering price, not the private secondary trades that may have preceded it. Secondary markets, by contrast, involve a smaller set of informed buyers and sellers negotiating directly, which can produce valuations that diverge from eventual IPO targets.</p>
+
+                <p>Sean points to pent-up demand as well. Many of these companies stayed private for so long that when they finally came to market, public investors piled in regardless of price. "I think there was just a liquidity premium because people couldn't access these companies," he said. That premium doesn't last. Chime, Figma, and Klarna all saw massive first-day pops. "Subsequently, all of them are below IPO price right now."</p>
+
+                <p>Figma illustrates what happens when secondary markets are cut out entirely. The company was so restrictive about pre-IPO trading that there was almost no price discovery before it listed. "If there's no secondary trading volume, you don't actually know what people are willing to transact at," Sean said. Figma's IPO popped massively on day one before giving almost all of it back. The gap between banker pricing and what the market actually settled on only became clear after the fact.</p>
+
+                <h2>Who Actually Wins</h2>
+
+                <p>If secondary markets are signaling that these valuations are stretched, and recent IPOs have mostly fallen back below their listing price, the obvious question is who benefits from the current structure. "The winners are really the investment banks that are handling the public offering," Sean said. "Employees are kind of also losing out because they're restricted from selling for typically 180 days post IPO." Secondary platforms offer a meaningful alternative, giving employees a way to access liquidity before that window closes and opening the door for retail investors to participate before listing day, rather than chasing a day-one pop at the back of the line.</p>
+
+                <p>For companies like SpaceX, which completed a secondary share sale at an $800 billion valuation in December 2025 and is reportedly targeting $1.5 trillion at IPO, the opportunity goes further. The only way most retail investors can access SpaceX right now is through special purpose vehicles, or SPVs. These are shell companies that pool investor money to buy private shares, with a single entity appearing on a company's shareholder list rather than hundreds of individuals. The structure itself is legitimate and widely used. According to Sean, some SpaceX SPVs are now operating at three and even four layers deep: one fund holds shares and sells interests to a second, which sells to a third, which sells to a fourth, which finally sells to the retail investor.</p>
+
+                <p>SPV investing remains a legitimate and valuable vehicle when approached carefully. The key, Sean emphasizes, is working with reputable sellers and platforms that thoroughly vet the SPV structure before investors commit. Each layer does add fees and another potential point of failure, and Sean is direct about the risk of cutting corners: "Whether or not someone's intentionally doing something illegal or just accidentally misrepresenting what they have access to, I just think there's too much room for error with some of these unreputable SPV managers. And ultimately the last person who invests is the one who loses." Fee structures matter too: some single-asset SPVs charge a 20% carry, meaning the manager takes 20% of any profit at payout, plus a hefty management fee, on one stock, with no active management involved. For investors, the answer is diligence and partnering with platforms that hold their SPV managers to a higher standard.</p>
+
+                <h2>Last in Line</h2>
+
+                <p>The pattern is consistent throughout. The people with the most information are positioned long before the public listing happens. The retail investor arrives at the end of that chain, with the least information and the most exposure.</p>
+
+                <p>Secondary market prices for companies like Discord, OpenAI, and SpaceX are among the only independent signals available to people outside the room where these deals get priced. They don't tell you everything, but they do reflect what informed buyers with real skin in the game think these companies are worth before the fanfare of a listing day. How wide the gap is between those prices and the eventual IPO target is a question worth sitting with before the bell rings.</p>
+
+                <p class="disclaimer">Disclaimer: This article is for informational purposes only and does not constitute investment advice. The views expressed are those of the author and should not be relied upon as financial or investment guidance.</p>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Margin UBC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
